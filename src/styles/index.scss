@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
+
+html[data-theme='dark'] {
+	--text: #fff;
+	--placeholder: #f1e8e8;
+	--deeper-dark: #191528;
+	--dark: #3c162f;
+	--lighter-dark: #4d194d;
+	--main: #3e1f47;
+	--auth: #1b3a4b;
+	--auth-border: #1a3847;
+}
+
+html[data-theme='light'] {
+	--text: #000;
+	--placeholder: #757373;
+	--deeper-dark: #99c1de;
+	--dark: #bcd4e6;
+	--lighter-dark: #dbe7e4;
+	--main: #f0efeb;
+	--auth: #ceb2de;
+	--auth-border: #c7b4d2;
+}
+
+* {
+  	margin: 0;
+  	padding: 0;
+  	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	::-webkit-scrollbar {
+		display: none;
+	}
+
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	&:focus {
+		outline: none;
+	}
+
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--deeper-dark);
+  transition: background-color 200ms linear;
+  color: var(--text);
+}
