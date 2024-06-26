@@ -19,16 +19,15 @@ $axios.interceptors.request.use(config => {
             config.headers.Authorization = `Bearer ${token}`
         }
         return config
-	}
-)
+})
 
 $axios.interceptors.response.use(
-	response => response,
+        response => response,
 	error => {
-        if (error.response.status === 401) {
-            Cookies.remove(TOKEN)
-            window.location = '/auth'
-        }
-        return Promise.reject(error)
+                if (error.response.status === 401) {
+                        Cookies.remove(TOKEN)
+                        window.location = '/auth'
+                }
+                return Promise.reject(error)
 	}
 )

@@ -1,0 +1,44 @@
+.block {
+    color: var(--text);
+
+    .panel {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        text-align: center;
+        margin: 15px;
+
+        .icon {
+            font-size: 25px;
+            margin-right: 10px;
+        }
+    
+        .name {
+            font-size: 20px;
+        }
+
+        .arrow {
+            font-size: 25px;
+            margin-right: 25px;
+        }
+    }
+}
+
+.items {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 7px;
+    transition: .8s;
+
+    .element {
+        text-decoration: none;
+        color: var(--text);
+        padding-bottom: 10px;
+    
+        .title {
+            font-size: 19px;
+            margin-left: 60px;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import 'src/styles/index.scss';
+
+.sidebar {
+    border-right-width: 1px;
+    border-right-color: rgba(255,255,255,.12);
+    height: 100%;
+    --tw-bg-opacity: 1;
+    background-color: var(--dark);
+    transition: background-color 200ms linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+        font-size: 29px;
+        font-weight: 600;
+        display: flex;
+        text-align: center;
+        padding: 7px;
+    }
+
+    .line {
+        height: 0.12rem;
+        background-color: rgba(255,255,255,.35);
+        width: 100%;
+    }
+
+    .items {
+        padding: 15px;
+        position: relative;
+        margin-top: 10px;
+    }
+}
+
+.element {
+    display: flex;
+    color: var(--text);
+    text-decoration: none;
+    margin-bottom: 10px;
+
+    .icon {
+        font-size: 25px;
+        cursor: auto;
+        margin: 10px 15px;
+    }
+
+    .name {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 15px;
+    right: 30px;
+
+    .logout {
+        color: var(--text);
+        font-size: 30px;
+    }
+}
+
