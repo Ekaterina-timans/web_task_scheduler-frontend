@@ -1,0 +1,33 @@
+.label {
+	font-size: 20px;
+}
+
+.input {
+	background-color: var(--lighter-dark);
+	transition: background-color 200ms linear;
+	border: 1px solid transparent;
+	color: var(--text);
+	font-size: 18px;
+	padding: 14px;
+	border-radius: 10px;
+	margin-bottom: 0.7rem;
+	outline: none;
+	width: 100%;
+
+	&:focus {
+		border-color: var(--deeper-dark);
+	}
+
+	&::placeholder {
+		color: var(--placeholder);
+	}
+}
+
+.error {
+	color: var(--placeholder);
+	font-size: 1rem;
+}
+
+.textarea {
+	max-width: 100%;
+}
