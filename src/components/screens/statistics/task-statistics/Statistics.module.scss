@@ -1,0 +1,26 @@
+.card {
+    background-color: var(--dark);
+    transition: background-color 200ms linear;
+    border-radius: 4px;
+    padding: 1.4rem;
+    text-align: center;
+    transition-duration: 500ms;
+    margin: 25px;
+    box-shadow: 3px 3px rgba(0, 0, 0, .2);
+
+    .label {
+        font-size: 22px;
+    }
+
+    .count {
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}

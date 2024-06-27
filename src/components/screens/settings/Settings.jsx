@@ -21,11 +21,11 @@ const Settings = () => {
     const { isPending, mutate } = useUpdateData()
 
     const onSubmit = data => {
-		const { password, ...rest } = data // если у нас есть пароль
+		const { password, ...rest } = data
 
 		mutate({
 			...rest,
-			password: password || undefined // если пароль есть, мы его показываем, иначе нет
+			password: password || undefined
 		})
 	}
 
