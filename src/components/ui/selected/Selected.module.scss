@@ -1,0 +1,45 @@
+.list {
+    
+    .block {
+        position: relative;
+        background-color: var(--lighter-dark);
+        transition: background-color 200ms linear;
+        border: 1px solid transparent;
+        padding: 14px;
+        border-radius: 10px;
+        margin-bottom: 0.7rem;
+        outline: none;
+    
+        .btnSelect {
+            font-size: 18px;
+            color: var(--placeholder);
+            background-color: transparent;
+            border: none;
+            width: 90%;
+            cursor: pointer;
+            left: 5px;
+        }
+
+        .btnDelete {
+            position: absolute;
+            background-color: transparent;
+            cursor: pointer;
+            color: var(--text);
+            border: none;
+            top: 10px;
+            right: 10px;
+        }
+    }
+
+    .element {
+        border: 1px solid transparent;
+        font-size: 18px;
+        padding: 0 16px;
+        border-radius: 10px;
+        outline: none;
+        width: 100%;
+        cursor: pointer;
+        transform-origin: top;
+        margin-bottom: 10px;
+    }
+}
