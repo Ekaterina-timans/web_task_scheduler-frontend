@@ -30,7 +30,7 @@ export const TaskService = {
     },
 
     async getTask(searchTerm) {
-        const response = await $axios.get('/user/tasks/search', {
+        const response = await $axios.get(`${BASE_URL}/search`, {
             params: searchTerm
 				? { searchTerm, }
 				: {},
